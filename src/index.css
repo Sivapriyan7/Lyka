@@ -41,23 +41,30 @@ h3 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add hover effect */
 }
 
-/* Add responsive styles for smaller screens */
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .container {
     width: 95%;
     padding: 0 1rem;
   }
+
   h1 {
     font-size: 2.5rem;
   }
+
   h2 {
     font-size: 2rem;
   }
-  .smart-serve .container,
-  .custom-website .container {
-    flex-direction: column;
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    line-height: 1.2;
   }
-  .contact form {
-    margin-top: 2rem;
+  .hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #f8f8f8;
   }
 }

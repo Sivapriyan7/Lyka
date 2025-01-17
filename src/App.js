@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
@@ -27,16 +26,13 @@ function App() {
         <Route path="/" element={
           <>
             <Hero />
-            
+            <div data-aos="fade-up"><AboutUs /></div>
             <div data-aos="fade-up"><SmartServe /></div>
             <div data-aos="fade-up"><CustomWebsite /></div>
             <div data-aos="fade-up"><Testimonials /></div>
-            <div data-aos="fade-up"><AboutUs /></div>
-
             <div data-aos="fade-up"><Contact /></div>
           </>
         } />
-        {/* Define other routes if needed */}
       </Routes>
       <Footer />
     </div>
